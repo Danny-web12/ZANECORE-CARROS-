@@ -7,9 +7,12 @@
     <style type="text/css" media="screen">
         body {
             background-color: #A6E4EA;
-            width: 600px;
+            max-width: 600px; /* Cambiado para que se adapte a celulares */
+            width: 100%;
             margin: auto;
             text-align: center;
+            padding: 10px; /* Espaciado extra para pantallas pequeñas */
+            box-sizing: border-box;
         }
         h1 {
             font-family: Impact, sans-serif;
@@ -30,12 +33,30 @@
     </style>
 </head>
 <body>
+
     <h1>Auto Center - Car Dealer</h1>
+
     <!-- Imagen del concesionario -->
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLA-4mWyFiIvwTsahpqvASqBenv7Or-VqZ86ytVvCvuw&s=10" alt="Auto Center">
+
     <p>En compra y venta de autos, ¡somos tu mejor opción!</p>
     <p>Visítanos en Km 13.5 Carretera al Salvador.</p>
-<script>var BotStar={appId:"sdad164ad-bec4-4fe7-b79e-b0bb86fba325",mode:"popup"};!function(t,a){var e=function(){(e.q=e.q||[]).push(arguments)};e.q=e.q||[],t.BotStarApi=e;!function(){var t=a.createElement("script");t.type="text/javascript",t.async=1,t.src="https://widget.botstar.com/static/js/widget.js";var e=a.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}();}(window,document)</script>
+
+    <!-- Script de BotStar -->
+    <script>
+        var BotStar = {appId: "sdad164ad-bec4-4fe7-b79e-b0bb86fba325", mode: "popup"};
+        !function(t, a) {
+            var e = function() { (e.q = e.q || []).push(arguments) };
+            e.q = e.q || [], t.BotStarApi = e;
+            !function() {
+                var t = a.createElement("script");
+                t.type = "text/javascript", t.async = 1, t.src = "https://widget.botstar.com/static/js/widget.js";
+                var e = a.getElementsByTagName("script")[0];
+                e.parentNode.insertBefore(t, e)
+            }();
+        }(window, document)
+    </script>
+
 </body>
 </html>
 
